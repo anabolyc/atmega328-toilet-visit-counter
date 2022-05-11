@@ -1,10 +1,13 @@
 # Toilet Visitor Counter
 
-Simple Arduino based project that counts some room (like toilet) visitors by sensing when someone pass the entry.
+Simple Arduino based project that counts some room (like toilet) visitors by sensing when someone pass the entry. It was insiped by bicycle counted spotted during one of the trips.
 
 ### Key features
 
-- Stays asleep most of the time
+- Stays asleep most of the time, 2 month of expected battery life
+- Keeps 2 numbers - daily and total visits. Total is stored in EEPROM, while daily is reset on power on
+- Checks twice per second if someone present in range
+- When detected - displays 2 numbers on the 8-digit display, reserving 4 digits for todays visits, and 4 more for total visits
 
 ### Components
 
@@ -24,3 +27,6 @@ With above setup I'm hoping to have around 2 month of battery life with 2000mah 
 
 ### Cardboard Prototype
 
+## Demo 
+
+![Demo](/doc/VID_20220511_204608.gif)
